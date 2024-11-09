@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:16px 60px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(95, 14, 181);
+    color: white;
+}
+#portfolio{
+    font-size:25px;
+}
+.nav-bar{
+    display: flex;
+    gap:30px;
+    list-style-type: none;
+    
+}
+.nav-bar-item a{
+    text-decoration: none;
+    color:white;
+}
+main{
+    background-color:rgb(45, 4, 79);
+    color:white;
+}
+.IntroSection{
+ display:flex;
+  padding:60px 30px;
+  max-width: 1200px;
+  margin:auto;
+  justify-content: space-between;
+  gap: 100px;
+}
+.leftSection{
+    
+    align-content: center;
+    width:35%;
+    font-size: 25px;
+}
+.name-line {
+    font-size: 35px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.leftSection #name{
+  color:rgb(230, 15, 215)
+} 
