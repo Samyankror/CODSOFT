@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.header-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-container{
+     padding:5px;
+
+}
+.nav-menu{
+    display:flex;
+    gap: 50px;
+}
+.nav-item{
+    list-style-type: none;
+}
+.nav-item a{
+    text-decoration:none;
+    font-size:20px;
+    color:rgb(55, 53, 53);
+    font-weight:600;
+}
+.nav-open{
+    display:none;
+}
+#logo{
+    width:50px;
+}
+.hero-section{
+    background-color: rgb(224, 199, 224);
+    
+}
+.hero-content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:rgb(55, 53, 53);
+    padding:80px 50px;
+}
+.hero-image {
+    width:50%;
+}
+img{
+    width:100%;
+}
+.hero-brand{
+    font-size: 25px;
+    padding:10px 0px;
+    font-weight:bold
+}
+.brand-name{
+
+ font-size:60px;
+ font-weight: bolder;
+ color: rgb(5, 79, 45);
+ 
+}
+.hero-subtitle{
+    font-size: 30px;
+    font-weight: bold;
+    padding:10px 0px;
+}
+#join-button{
+ border:2px solid black;
+ border-radius: 30px;
+ padding:10px 15px;
+ font-size:18px;
+ cursor: pointer;
+}
+ .vareity-section{
+    padding:20px;
+    margin:20px;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ .section-title{
+    padding:25px;
+    margin:20px;
+    font-size: 35px;
+    font-weight: bold;
+ }
+.coffee-varieties{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1300px;
+    margin: auto;
+    color:white;
+    gap:30px;
+}
+.coffee-item{
+ max-width:350px;
+ background-color: rgb(15, 142, 91);
+ 
+}
+.coffee-name{
+    font-size: 25px;
+    padding:5px;
+}
+.coffee-desc{
+    font-size:20px;
+    padding:5px;
+}
+.coffee-img{
+    width:400px;
+    height:300px;
+   
+   object-fit: contain;
+   padding: 5px;
+   
+}
+
+.about-section{
+    background-color: rgb(224, 199, 224);
+    padding:20px;
+    padding-bottom: 40px;
+    
+}
+
+.about-title{
+    text-align: center;
+    padding:30px;
+    padding-bottom:40px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.about-content{
+    display:flex;
+    gap:50px;
+    max-width: 1300px;
+    margin:auto;
+    color:rgb(55, 53, 53);
+   
+}
+
+.about-image img{
+    width:600px;
+}
+.about-highlight{
+    font-size:30px;
+    font-weight:bold
+}
+.about-para{
+    font-size:20px;
+    font-weight:500;
+}
+.contact-section{
+    margin:20px;
+}
+.contact-social{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    padding-top:40px;
+    padding-bottom: 10px;
+}
+#fb,#yt{
+    width:60px;
+    padding-top: 20px;
+}
+#twitter,#insta{
+width:100px
+}
+.policy-terms{
+display:flex;
+justify-content: center;
+gap:40px;
+font-size:25px;
+font-weight:600;
+padding:10px;
+}
+.policy-link{
+    text-decoration: none;
+    color:rgb(53, 53, 53);
+}
+.footer{
+    text-align: center;
+    color:rgb(53, 53, 53);
+    font-size:18px;
+    font-weight: 600;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.footer-name{
+    text-decoration: none;
+}
+.testimonials-section{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 50px;
+    background-color:rgb(17, 98, 53) ;
+    color:white;
+}
+
+.testimonials-content{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    max-width: 1280px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+.testimonial-item{
+    border:2px solid rgb(180, 175, 175);
+    border-radius:50px;
+}
+.review{
+    padding:15px;
+}
+
+.testimonial-image{
+    padding:10px;
+    width:30%;
+}
+.testimonial-name{
+    padding-top:10px;
+    padding-bottom: 25px;
+}
+ @media (max-width: 770px) {
+    .hero-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    .nav-menu{
+        display:none;
+    }
+    .nav-open{
+        display:block;
+        font-size:50px;
+        font-weight:bold
+    }
+    
+    .coffee-varieties{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-image img{
+        width: 100%;
+        max-width: 500px;
+    }
+    .testimonials-content{
+        grid-template-columns: 1fr;
+    }
+    .policy-terms{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    
+    .coffee-varieties{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .coffee-item{
+        max-width: 100%;
+    }
+    .testimonials-content{
+        grid-template-columns: 1fr;
+    }
+    .contact-social{
+        flex-direction: column;
+        align-items: center;
+    }
+} 

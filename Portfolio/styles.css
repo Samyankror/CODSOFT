@@ -29,6 +29,12 @@ header{
     text-decoration: none;
     color:white;
 }
+@media (max-width: 600px)   {
+    .nav-bar-item{
+        display: none;
+    }
+   
+}
 main{
     background-color:rgb(45, 4, 79);
     color:white;
@@ -41,18 +47,151 @@ main{
   justify-content: space-between;
   gap: 100px;
 }
+#Studyimg{
+    width:500px;
+    height:500px;
+}
+@media (max-width: 600px)   {
+    .IntroSection{
+        flex-direction:column;
+    }
+    #Studyimg{
+        width:250px;
+        height:250px;
+    }
+}
 .leftSection{
-    
+    display:flex;
+    flex-direction: column;
     align-content: center;
     width:35%;
     font-size: 25px;
+    gap:20px;
 }
+
 .name-line {
     font-size: 35px;
-    padding: 10px;
+    padding: 2px;
     display: inline-block;
 }
 
+#githublink{
+    color:white;
+    background-color: rgb(207, 19, 236);
+    padding:5px;
+    margin-top: 1rem;
+    border: 4px solid rgb(7, 9, 143);
+}
 .leftSection #name{
   color:rgb(230, 15, 215)
 } 
+
+.skillSection{
+    padding:60px 100px;
+}
+.skillSection h2{
+    padding:6px;
+}
+.skillSection li{
+    padding:4px;
+}
+
+.projectSection{
+    padding:60px 100px;
+}
+.project{
+    padding:8px;
+}
+
+.projectName,.projectDes{
+    padding:3px;
+}
+.projectDes{
+    font-size: large;
+}
+#srcCode{
+    color:white;
+    background-color: rgb(207, 19, 236);
+    padding:5px;
+    display: inline-block;
+    margin-top: 1rem;
+    border: 4px solid rgb(7, 9, 143);
+    margin-top: 10px;
+    font-size: large;
+}
+.formitem{
+    padding:5px 0px;
+}
+label, input {
+    display: block;
+    width:100%;
+     padding:10px;
+}
+label{
+    font-size: 20px;
+}
+input:focus {
+    border: 4px solid rgb(6, 90, 158); 
+    outline: none; 
+}
+textarea{
+    display: block;
+    width:100%;
+    padding:10px;
+    height: 120px;
+}
+.contact{
+    padding:60px 100px;
+}
+.contactInfo{
+    display: flex;
+    gap:60px;
+}
+@media (max-width: 600px)   {
+    .contactInfo{
+        flex-direction:column;
+    }
+}
+.contactLeft{
+    border:2px solid rgb(15, 137, 223);
+    margin-top:40px;
+    padding:15px 25px;
+    width:50%;
+}
+#formsubmit{
+    margin:10px 0px;
+    padding:5px 10px;
+    font-size: 20px;
+    background-color: rgb(8, 94, 147);
+    color: aliceblue;
+    border: none;
+    cursor:pointer;
+}
+
+.contactright{
+    margin-top:10px;
+    
+    padding:15px 25px;
+}
+#contactdetail{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contactright p{
+    font-size: 20px;
+    padding:5px 0px;
+}
+.footer-content{
+    text-align: center;
+    color:white;
+    background-color: rgb(107, 17, 155);
+    padding:10px 0px;
+}
+#footerName{
+    text-decoration: none;
+    color:white;
+}
+h2{
+    font-size:35px;
+    color:rgb(213, 86, 239)
+}
